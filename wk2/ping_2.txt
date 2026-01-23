@@ -1,0 +1,17 @@
+mariia@ms-zen14:~$ ping 23.162.200.242
+PING 23.162.200.242 (23.162.200.242) 56(84) bytes of data.
+64 bytes from 23.162.200.242: icmp_seq=1 ttl=56 time=4.01 ms
+64 bytes from 23.162.200.242: icmp_seq=2 ttl=56 time=3.65 ms
+64 bytes from 23.162.200.242: icmp_seq=3 ttl=56 time=3.99 ms
+64 bytes from 23.162.200.242: icmp_seq=4 ttl=56 time=3.67 ms
+64 bytes from 23.162.200.242: icmp_seq=5 ttl=56 time=13.9 ms
+64 bytes from 23.162.200.242: icmp_seq=6 ttl=56 time=12.7 ms
+64 bytes from 23.162.200.242: icmp_seq=7 ttl=56 time=3.60 ms
+64 bytes from 23.162.200.242: icmp_seq=8 ttl=56 time=11.8 ms
+64 bytes from 23.162.200.242: icmp_seq=9 ttl=56 time=12.0 ms
+64 bytes from 23.162.200.242: icmp_seq=10 ttl=56 time=5.40 ms
+^C
+--- 23.162.200.242 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9009ms
+rtt min/avg/max/mdev = 3.604/7.477/13.948/4.256 ms
+mariia@ms-zen14:~$ 

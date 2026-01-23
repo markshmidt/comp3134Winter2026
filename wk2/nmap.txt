@@ -1,0 +1,45 @@
+oot@242-200-162-23:~/repos/comp3134# nmap --version
+Nmap version 7.94SVN ( https://nmap.org )
+Platform: x86_64-pc-linux-gnu
+Compiled with: liblua-5.4.6 openssl-3.0.13 libssh2-1.11.0 libz-1.3 libpcre2-10.42 libpcap-1.10.4 nmap-libdnet-1.12 ipv6
+Compiled without:
+Available nsock engines: epoll poll select
+root@242-200-162-23:~/repos/comp3134# 
+oot@242-200-162-23:~/repos/comp3134# nmap github.com
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-01-23 17:33 UTC
+Nmap scan report for github.com (140.82.112.4)
+Host is up (0.040s latency).
+rDNS record for 140.82.112.4: lb-140-82-112-4-iad.github.com
+Not shown: 997 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 6.97 seconds
+root@242-200-162-23:~/repos/comp3134# nmap -p 433 github.com
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-01-23 17:34 UTC
+Nmap scan report for github.com (140.82.113.3)
+Host is up (0.021s latency).
+rDNS record for 140.82.113.3: lb-140-82-113-3-iad.github.com
+
+PORT    STATE    SERVICE
+433/tcp filtered nnsp
+
+Nmap done: 1 IP address (1 host up) scanned in 0.36 seconds
+root@242-200-162-23:~/repos/comp3134# nmap -p 433-80 github.com
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-01-23 17:34 UTC
+Your port range 433-80 is backwards. Did you mean 80-433?
+QUITTING!
+root@242-200-162-23:~/repos/comp3134# nmap -p 80-433 github.com
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-01-23 17:34 UTC
+Nmap scan report for github.com (140.82.112.3)
+Host is up (0.022s latency).
+rDNS record for 140.82.112.3: lb-140-82-112-3-iad.github.com
+Not shown: 353 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 2.66 seconds
+root@242-200-162-23:~/repos/comp3134# 
+

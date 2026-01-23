@@ -1,0 +1,46 @@
+WHOIS LOOKUP RESULTS - COMP 3134 (Introduction to Cyber Security)
+
+====================================================
+1) Domain: 23.162.200.242
+Palmira Hosting LLC NAT64 (NET-23-162-200-0-1) 23.162.200.0 - 23.162.200.255
+GLOBALTELEHOST Corp. AS-GTHOST (NET-23-162-200-0-2) 23.162.200.0 - 23.162.200.255
+====================================================
+
+2) Domain: georgebrown.ca
+Registrar Information
+Registrar
+Webnames.ca Inc.
+WHOIS Server
+whois.ca.fury.ca
+Referral URL
+webnames.ca
+Important Dates
+Created
+7/4/2002
+Updated
+1/15/2026
+Expires
+7/4/2026
+====================================================
+
+3) Domain: wikipedia.org
+Access to WHOIS information for the domain wikipedia.org has been restricted.
+====================================================
+
+4) Domain: gthost.com
+Registrar Information
+Registrar
+GoDaddy.com, LLC
+WHOIS Server
+whois.godaddy.com
+Referral URL
+http://www.godaddy.com
+
+====================================================
+
+5) Domain: solidtack.com
+solidstack.com
+WHOIS Information
+
+IP Address: 104.21.72.37
+====================================================

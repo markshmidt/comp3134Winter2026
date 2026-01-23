@@ -1,0 +1,9 @@
+traceroute github.com
+traceroute to github.com (140.82.114.3), 30 hops max, 60 byte packets
+ 1  23.162.200.1 (23.162.200.1)  0.780 ms  0.741 ms  0.722 ms
+ 2  216.191.231.81 (216.191.231.81)  0.708 ms  0.688 ms  0.660 ms
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  209.66.120.181.IPYX-243981-004-ZYO.zip.zayo.com (209.66.120.181)  21.046 ms  21.007 ms  21.025 ms

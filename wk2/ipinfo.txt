@@ -1,0 +1,35 @@
+============================================================
+IP LOOKUP #1
+Domain: github.com
+IP Address: 140.82.121.3
+Geolocation: United States (US), California, San Francisco
+============================================================
+
+============================================================
+IP LOOKUP #2
+Domain: netflix.com
+IP Address: 52.38.74.5
+Geolocation: United States (US), Oregon, Portland
+============================================================
+
+============================================================
+IP LOOKUP #3
+Domain: apple.com
+IP Address: 17.253.144.10
+Geolocation: United States (US), California, Cupertino
+============================================================
+
+============================================================
+IP LOOKUP #4
+Domain: bbc.co.uk
+IP Address: 151.101.0.81
+Geolocation: United States (US), California, San Francisco
+============================================================
+
+============================================================
+IP LOOKUP #5
+Domain: nytimes.com
+IP Address: 151.101.1.164
+Geolocation: United States (US), California, San Francisco
+============================================================
+
