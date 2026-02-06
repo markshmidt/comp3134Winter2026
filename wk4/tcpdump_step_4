@@ -1,0 +1,18 @@
+mariia@ms-zen14:~$ sudo tcpdump -D
+1.wlo1 [Up, Running, Wireless, Associated]
+2.tailscale0 [Up, Running, Connected]
+3.docker0 [Up, Running, Connected]
+4.veth98a5a0d [Up, Running, Connected]
+5.any (Pseudo-device that captures on all interfaces) [Up, Running]
+6.lo [Up, Running, Loopback]
+7.virbr0 [Up, Disconnected]
+8.br-3558718801ea [Up, Disconnected]
+9.br-8934619c2a6f [Up, Disconnected]
+10.br-9b04e0a2ed6e [Up, Disconnected]
+11.bluetooth0 (Bluetooth adapter number 0) [Wireless, Association status unknown]
+12.bluetooth-monitor (Bluetooth Linux Monitor) [Wireless]
+13.nflog (Linux netfilter log (NFLOG) interface) [none]
+14.nfqueue (Linux netfilter queue (NFQUEUE) interface) [none]
+15.dbus-system (D-Bus system bus) [none]
+16.dbus-session (D-Bus session bus) [none]
+

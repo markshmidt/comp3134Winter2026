@@ -1,0 +1,86 @@
+mariia@ms-zen14:~$ sudo tcpdump -i wlo1 tcp
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on wlo1, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+13:13:42.914912 IP ec2-98-91-244-123.compute-1.amazonaws.com.https > ms-zen14.58302: Flags [.], ack 286489380, win 455, options [nop,nop,TS val 3908696109 ecr 4074601651], length 0
+13:13:42.914971 IP ms-zen14.58302 > ec2-98-91-244-123.compute-1.amazonaws.com.https: Flags [.], ack 1, win 482, options [nop,nop,TS val 4074617017 ecr 3908665759], length 0
+13:13:43.536987 IP ms-zen14.53378 > 155.226.153.84.https: Flags [.], ack 53746071, win 501, options [nop,nop,TS val 1655972619 ecr 1394531185], length 0
+13:13:43.554339 IP 155.226.153.84.https > ms-zen14.53378: Flags [.], ack 1, win 458, options [nop,nop,TS val 1394576281 ecr 1655927567], length 0
+13:13:43.565706 IP lb-140-82-113-26-iad.github.com.https > ms-zen14.56474: Flags [P.], seq 2566382523:2566382548, ack 1547978566, win 74, options [nop,nop,TS val 1655690156 ecr 4087317338], length 25
+13:13:43.566056 IP ms-zen14.56474 > lb-140-82-113-26-iad.github.com.https: Flags [P.], seq 1:30, ack 25, win 474, options [nop,nop,TS val 4087377286 ecr 1655690156], length 29
+13:13:43.582020 IP lb-140-82-113-26-iad.github.com.https > ms-zen14.56474: Flags [.], ack 30, win 74, options [nop,nop,TS val 1655690174 ecr 4087377286], length 0
+13:13:44.048919 IP ms-zen14.49854 > server-18-67-17-125.yto50.r.cloudfront.net.https: Flags [.], ack 2872939411, win 469, options [nop,nop,TS val 1330974762 ecr 1943509978], length 0
+13:13:44.048981 IP ms-zen14.38504 > lcyyzb-in-f156.1e100.net.https: Flags [.], ack 3446321980, win 451, options [nop,nop,TS val 374328190 ecr 3762573663], length 0
+13:13:44.049002 IP ms-zen14.45402 > lcyyzb-in-f155.1e100.net.https: Flags [.], ack 733139211, win 451, options [nop,nop,TS val 1902354303 ecr 503510252], length 0
+13:13:44.049013 IP ms-zen14.34056 > server-18-67-39-7.yto50.r.cloudfront.net.https: Flags [.], ack 3931648534, win 487, options [nop,nop,TS val 2326752435 ecr 1738024518], length 0
+13:13:44.049023 IP ms-zen14.55784 > lcyyzb-in-f155.1e100.net.https: Flags [.], ack 1276119781, win 450, options [nop,nop,TS val 1902354303 ecr 3956242821], length 0
+13:13:44.049033 IP ms-zen14.38502 > lcyyzb-in-f156.1e100.net.https: Flags [.], ack 4106574938, win 450, options [nop,nop,TS val 374328190 ecr 4101365438], length 0
+13:13:44.049043 IP ms-zen14.52284 > 127.55.160.34.bc.googleusercontent.com.https: Flags [.], ack 1811268031, win 455, options [nop,nop,TS val 1157113170 ecr 853096914], length 0
+13:13:44.049057 IP ms-zen14.58012 > lcyyzb-in-f154.1e100.net.https: Flags [.], ack 325489381, win 451, options [nop,nop,TS val 214463066 ecr 2546500306], length 0
+13:13:44.049071 IP ms-zen14.55780 > lcyyzb-in-f155.1e100.net.https: Flags [.], ack 507736500, win 450, options [nop,nop,TS val 1902354303 ecr 1925364413], length 0
+13:13:44.049086 IP ms-zen14.45420 > lcyyzb-in-f155.1e100.net.https: Flags [.], ack 554628564, win 451, options [nop,nop,TS val 1902354303 ecr 236856500], length 0
+13:13:44.049101 IP ms-zen14.45410 > lcyyzb-in-f155.1e100.net.https: Flags [.], ack 2761753963, win 450, options [nop,nop,TS val 1902354303 ecr 1708829986], length 0
+13:13:44.049115 IP ms-zen14.60320 > lcyyzb-in-f157.1e100.net.https: Flags [.], ack 2863234740, win 450, options [nop,nop,TS val 1969320282 ecr 2574143748], length 0
+13:13:44.049141 IP ms-zen14.60318 > lcyyzb-in-f157.1e100.net.https: Flags [.], ack 861452639, win 451, options [nop,nop,TS val 1969320282 ecr 2645792466], length 0
+13:13:44.049157 IP ms-zen14.60296 > lcyyzb-in-f157.1e100.net.https: Flags [.], ack 1516698471, win 451, options [nop,nop,TS val 1969320282 ecr 241769288], length 0
+13:13:44.049174 IP ms-zen14.45432 > lcyyzb-in-f155.1e100.net.https: Flags [.], ack 3211225866, win 450, options [nop,nop,TS val 1902354303 ecr 2491985386], length 0
+13:13:44.049189 IP ms-zen14.60326 > lcyyzb-in-f157.1e100.net.https: Flags [.], ack 3706449427, win 451, options [nop,nop,TS val 1969320282 ecr 1589619555], length 0
+13:13:44.049202 IP ms-zen14.60324 > lcyyzb-in-f157.1e100.net.https: Flags [.], ack 1346005717, win 451, options [nop,nop,TS val 1969320282 ecr 1046586406], length 0
+13:13:44.049223 IP ms-zen14.35032 > server-3-164-92-86.yto53.r.cloudfront.net.https: Flags [.], ack 3805635714, win 482, options [nop,nop,TS val 2947635767 ecr 891831404], length 0
+13:13:44.049238 IP ms-zen14.59088 > lcyyzb-in-f154.1e100.net.https: Flags [.], ack 3537373102, win 451, options [nop,nop,TS val 214463066 ecr 3982211550], length 0
+13:13:44.049254 IP ms-zen14.60312 > lcyyzb-in-f157.1e100.net.https: Flags [.], ack 3382865336, win 450, options [nop,nop,TS val 1969320282 ecr 184179571], length 0
+13:13:44.049272 IP ms-zen14.45390 > lcyyzb-in-f155.1e100.net.https: Flags [.], ack 1134278100, win 450, options [nop,nop,TS val 1902354303 ecr 552513318], length 0
+13:13:44.049297 IP ms-zen14.59086 > lcyyzb-in-f154.1e100.net.https: Flags [.], ack 427473009, win 451, options [nop,nop,TS val 214463066 ecr 1438304478], length 0
+13:13:44.049355 IP ms-zen14.54204 > 248.109.49.34.bc.googleusercontent.com.https: Flags [.], ack 3327462023, win 458, options [nop,nop,TS val 2859572061 ecr 2624985208], length 0
+13:13:44.061737 IP server-18-67-17-125.yto50.r.cloudfront.net.https > ms-zen14.49854: Flags [.], ack 1, win 153, options [nop,nop,TS val 1943555021 ecr 1330836682], length 0
+13:13:44.063278 IP lcyyzb-in-f156.1e100.net.https > ms-zen14.38504: Flags [.], ack 1, win 1038, options [nop,nop,TS val 3762618705 ecr 374190125], length 0
+13:13:44.066603 IP lcyyzb-in-f157.1e100.net.https > ms-zen14.60324: Flags [.], ack 1, win 1032, options [nop,nop,TS val 1046631450 ecr 1969182102], length 0
+13:13:44.066604 IP lcyyzb-in-f157.1e100.net.https > ms-zen14.60326: Flags [.], ack 1, win 1031, options [nop,nop,TS val 1589664599 ecr 1969182102], length 0
+13:13:44.066607 IP lcyyzb-in-f157.1e100.net.https > ms-zen14.60318: Flags [.], ack 1, win 1032, options [nop,nop,TS val 2645837510 ecr 1969181873], length 0
+13:13:44.066608 IP lcyyzb-in-f155.1e100.net.https > ms-zen14.45432: Flags [.], ack 1, win 1032, options [nop,nop,TS val 2492030430 ecr 1902216517], length 0
+13:13:44.066608 IP lcyyzb-in-f157.1e100.net.https > ms-zen14.60296: Flags [.], ack 1, win 1031, options [nop,nop,TS val 241814332 ecr 1969181733], length 0
+13:13:44.066615 IP lcyyzb-in-f157.1e100.net.https > ms-zen14.60320: Flags [.], ack 1, win 1030, options [nop,nop,TS val 2574188792 ecr 1969182012], length 0
+13:13:44.066616 IP lcyyzb-in-f155.1e100.net.https > ms-zen14.45410: Flags [.], ack 1, win 1031, options [nop,nop,TS val 1708875030 ecr 1902216371], length 0
+13:13:44.066616 IP lcyyzb-in-f155.1e100.net.https > ms-zen14.45420: Flags [.], ack 1, win 1032, options [nop,nop,TS val 236901543 ecr 1902216412], length 0
+13:13:44.066619 IP lcyyzb-in-f155.1e100.net.https > ms-zen14.55784: Flags [.], ack 1, win 1031, options [nop,nop,TS val 3956287865 ecr 1902216680], length 0
+13:13:44.066619 IP lcyyzb-in-f154.1e100.net.https > ms-zen14.59086: Flags [.], ack 1, win 1032, options [nop,nop,TS val 1438349522 ecr 214324115], length 0
+13:13:44.066631 IP 248.109.49.34.bc.googleusercontent.com.https > ms-zen14.54204: Flags [.], ack 1, win 1043, options [nop,nop,TS val 2625030252 ecr 2859433088], length 0
+13:13:44.066632 IP lcyyzb-in-f155.1e100.net.https > ms-zen14.45390: Flags [.], ack 1, win 1031, options [nop,nop,TS val 552558362 ecr 1902215433], length 0
+13:13:44.066633 IP lcyyzb-in-f154.1e100.net.https > ms-zen14.59088: Flags [.], ack 1, win 1032, options [nop,nop,TS val 3982256594 ecr 214325002], length 0
+13:13:44.066642 IP lcyyzb-in-f155.1e100.net.https > ms-zen14.45402: Flags [.], ack 1, win 1032, options [nop,nop,TS val 503555294 ecr 1902216060], length 0
+13:13:44.066646 IP lcyyzb-in-f154.1e100.net.https > ms-zen14.58012: Flags [.], ack 1, win 1030, options [nop,nop,TS val 2546545349 ecr 214325488], length 0
+13:13:44.066646 IP lcyyzb-in-f155.1e100.net.https > ms-zen14.55780: Flags [.], ack 1, win 1031, options [nop,nop,TS val 1925409457 ecr 1902216579], length 0
+13:13:44.066660 IP server-18-67-39-7.yto50.r.cloudfront.net.https > ms-zen14.34056: Flags [.], ack 1, win 144, options [nop,nop,TS val 1738069561 ecr 2326614333], length 0
+13:13:44.066662 IP lcyyzb-in-f156.1e100.net.https > ms-zen14.38502: Flags [.], ack 1, win 1031, options [nop,nop,TS val 4101410482 ecr 374189426], length 0
+13:13:44.066674 IP server-3-164-92-86.yto53.r.cloudfront.net.https > ms-zen14.35032: Flags [.], ack 1, win 149, options [nop,nop,TS val 891876447 ecr 2947497454], length 0
+13:13:44.066675 IP 127.55.160.34.bc.googleusercontent.com.https > ms-zen14.52284: Flags [.], ack 1, win 1025, options [nop,nop,TS val 853141957 ecr 1156615634], length 0
+13:13:44.066676 IP lcyyzb-in-f157.1e100.net.https > ms-zen14.60312: Flags [.], ack 1, win 1037, options [nop,nop,TS val 184224615 ecr 1969181732], length 0
+13:13:44.079866 IP ms-zen14.53660 > 130.202.211.35.bc.googleusercontent.com.https: Flags [.], ack 177104208, win 492, options [nop,nop,TS val 3897179989 ecr 616682131], length 0
+13:13:44.083926 IP ms-zen14.45476 > 79.3.211.35.bc.googleusercontent.com.https: Flags [.], ack 3165867166, win 459, options [nop,nop,TS val 3701240351 ecr 3706746512], length 0
+13:13:44.116588 IP 130.202.211.35.bc.googleusercontent.com.https > ms-zen14.53660: Flags [.], ack 1, win 1041, options [nop,nop,TS val 616727195 ecr 3896682838], length 0
+13:13:44.121933 IP 79.3.211.35.bc.googleusercontent.com.https > ms-zen14.45476: Flags [.], ack 1, win 1005, options [nop,nop,TS val 3706791580 ecr 3700742931], length 0
+13:13:44.347131 IP ms-zen14.34146 > ec2-52-21-189-118.compute-1.amazonaws.com.https: Flags [S], seq 3867722872, win 64240, options [mss 1460,sackOK,TS val 1747671987 ecr 0,nop,wscale 7], length 0
+13:13:44.368534 IP ec2-52-21-189-118.compute-1.amazonaws.com.https > ms-zen14.34146: Flags [S.], seq 1656019042, ack 3867722873, win 8192, options [mss 1250,sackOK,TS val 4071019787 ecr 1747671987,nop,wscale 3], length 0
+13:13:44.368593 IP ms-zen14.34146 > ec2-52-21-189-118.compute-1.amazonaws.com.https: Flags [.], ack 1, win 502, options [nop,nop,TS val 1747672008 ecr 4071019787], length 0
+13:13:44.369571 IP ms-zen14.34146 > ec2-52-21-189-118.compute-1.amazonaws.com.https: Flags [P.], seq 1:1829, ack 1, win 502, options [nop,nop,TS val 1747672009 ecr 4071019787], length 1828
+13:13:44.389221 IP ec2-52-21-189-118.compute-1.amazonaws.com.https > ms-zen14.34146: Flags [.], ack 1829, win 1034, options [nop,nop,TS val 4071019810 ecr 1747672009], length 0
+13:13:44.397957 IP ec2-52-21-189-118.compute-1.amazonaws.com.https > ms-zen14.34146: Flags [P.], seq 1:2477, ack 1829, win 1118, options [nop,nop,TS val 4071019816 ecr 1747672009], length 2476
+13:13:44.397958 IP ec2-52-21-189-118.compute-1.amazonaws.com.https > ms-zen14.34146: Flags [P.], seq 2477:3997, ack 1829, win 1118, options [nop,nop,TS val 4071019816 ecr 1747672009], length 1520
+13:13:44.397996 IP ms-zen14.34146 > ec2-52-21-189-118.compute-1.amazonaws.com.https: Flags [.], ack 2477, win 483, options [nop,nop,TS val 1747672038 ecr 4071019816], length 0
+13:13:44.398022 IP ms-zen14.34146 > ec2-52-21-189-118.compute-1.amazonaws.com.https: Flags [.], ack 3997, win 472, options [nop,nop,TS val 1747672038 ecr 4071019816], length 0
+13:13:44.399347 IP ms-zen14.34146 > ec2-52-21-189-118.compute-1.amazonaws.com.https: Flags [P.], seq 1829:1909, ack 3997, win 472, options [nop,nop,TS val 1747672039 ecr 4071019816], length 80
+13:13:44.399582 IP ms-zen14.34146 > ec2-52-21-189-118.compute-1.amazonaws.com.https: Flags [P.], seq 1909:2001, ack 3997, win 472, options [nop,nop,TS val 1747672039 ecr 4071019816], length 92
+13:13:44.399820 IP ms-zen14.34146 > ec2-52-21-189-118.compute-1.amazonaws.com.https: Flags [P.], seq 2001:5361, ack 3997, win 472, options [nop,nop,TS val 1747672040 ecr 4071019816], length 3360
+13:13:44.421219 IP ec2-52-21-189-118.compute-1.amazonaws.com.https > ms-zen14.34146: Flags [P.], seq 3997:4284, ack 2001, win 1118, options [nop,nop,TS val 4071019839 ecr 1747672039], length 287
+13:13:44.421221 IP ec2-52-21-189-118.compute-1.amazonaws.com.https > ms-zen14.34146: Flags [P.], seq 4284:4571, ack 2001, win 1118, options [nop,nop,TS val 4071019840 ecr 1747672039], length 287
+13:13:44.421222 IP ec2-52-21-189-118.compute-1.amazonaws.com.https > ms-zen14.34146: Flags [P.], seq 4571:4629, ack 2001, win 1118, options [nop,nop,TS val 4071019840 ecr 1747672039], length 58
+13:13:44.421222 IP ec2-52-21-189-118.compute-1.amazonaws.com.https > ms-zen14.34146: Flags [.], ack 5361, win 880, options [nop,nop,TS val 4071019840 ecr 1747672040], length 0
+13:13:44.421550 IP ms-zen14.34146 > ec2-52-21-189-118.compute-1.amazonaws.com.https: Flags [.], ack 4629, win 468, options [nop,nop,TS val 1747672061 ecr 4071019839], length 0
+13:13:44.421765 IP ms-zen14.34146 > ec2-52-21-189-118.compute-1.amazonaws.com.https: Flags [P.], seq 5361:5392, ack 4629, win 468, options [nop,nop,TS val 1747672061 ecr 4071019839], length 31
+13:13:44.421971 IP ec2-52-21-189-118.compute-1.amazonaws.com.https > ms-zen14.34146: Flags [P.], seq 4629:4829, ack 5361, win 1118, options [nop,nop,TS val 4071019842 ecr 1747672040], length 200
+13:13:44.463948 IP ms-zen14.34146 > ec2-52-21-189-118.compute-1.amazonaws.com.https: Flags [.], ack 4829, win 467, options [nop,nop,TS val 1747672104 ecr 4071019842], length 0
+13:13:44.483443 IP ec2-52-21-189-118.compute-1.amazonaws.com.https > ms-zen14.34146: Flags [.], ack 5392, win 1118, options [nop,nop,TS val 4071019903 ecr 1747672061], length 0
+^C
+78 packets captured
+78 packets received by filter
+0 packets dropped by kernel
+

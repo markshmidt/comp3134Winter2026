@@ -1,0 +1,26 @@
+mariia@ms-zen14:~$ sudo tcpdump -n -i wlo1
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on wlo1, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+13:11:35.727365 IP 34.227.69.208.443 > 10.0.97.70.58588: Flags [.], ack 2250456313, win 459, options [nop,nop,TS val 1835041678 ecr 3090120068], length 0
+13:11:35.727367 IP 34.227.69.208.443 > 10.0.97.70.58614: Flags [.], ack 1707777568, win 475, options [nop,nop,TS val 1835041644 ecr 3090120002], length 0
+13:11:35.727422 IP 10.0.97.70.58588 > 34.227.69.208.443: Flags [.], ack 1, win 481, options [nop,nop,TS val 3090135163 ecr 1835026615], length 0
+13:11:35.727453 IP 10.0.97.70.58614 > 34.227.69.208.443: Flags [.], ack 1, win 501, options [nop,nop,TS val 3090135163 ecr 1835026651], length 0
+13:11:35.727478 IP 34.227.69.208.443 > 10.0.97.70.58580: Flags [.], ack 939891349, win 468, options [nop,nop,TS val 1835041644 ecr 3090119901], length 0
+13:11:35.727488 IP 10.0.97.70.58580 > 34.227.69.208.443: Flags [.], ack 1, win 462, options [nop,nop,TS val 3090135163 ecr 1835026490], length 0
+13:11:35.773940 IP 10.0.97.70.47217 > 142.250.137.154.443: UDP, length 284
+13:11:35.776013 IP 124.146.153.167.443 > 10.0.97.70.35030: Flags [P.], seq 1871441401:1871441432, ack 4216070515, win 72, options [nop,nop,TS val 3960038333 ecr 2958501457], length 31
+13:11:35.776015 IP 124.146.153.167.443 > 10.0.97.70.35030: Flags [F.], seq 31, ack 1, win 72, options [nop,nop,TS val 3960038333 ecr 2958501457], length 0
+13:11:35.776062 IP 10.0.97.70.35030 > 124.146.153.167.443: Flags [.], ack 31, win 468, options [nop,nop,TS val 2958516454 ecr 3960038333], length 0
+13:11:35.778559 IP 142.250.137.154.443 > 10.0.97.70.47217: UDP, length 30
+13:11:35.779956 IP 10.0.97.70.47217 > 142.250.137.154.443: UDP, length 33
+13:11:35.807036 IP 142.250.137.154.443 > 10.0.97.70.47217: UDP, length 115
+13:11:35.809528 IP 10.0.97.70.47217 > 142.250.137.154.443: UDP, length 37
+13:11:35.814654 IP 142.250.137.154.443 > 10.0.97.70.47217: UDP, length 26
+13:11:35.816925 IP 10.0.97.70.35030 > 124.146.153.167.443: Flags [.], ack 32, win 468, options [nop,nop,TS val 2958516495 ecr 3960038333], length 0
+13:11:36.340155 IP 10.0.96.100.137 > 10.0.127.255.137: UDP, length 50
+^C
+17 packets captured
+17 packets received by filter
+0 packets dropped by kernel
+mariia@ms-zen14:~$ 
+

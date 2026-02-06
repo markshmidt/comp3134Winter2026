@@ -1,0 +1,94 @@
+mariia@ms-zen14:~$ sudo tcpdump -r 0001.pcap
+reading from file 0001.pcap, link-type EN10MB (Ethernet), snapshot length 262144
+13:10:16.159604 IP 10.0.64.45.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:16.356648 IP ms-zen14.35010 > 104.16.103.112.https: Flags [P.], seq 3810648085:3810648173, ack 503060449, win 360, options [nop,nop,TS val 3955048053 ecr 339442634], length 88
+13:10:16.359477 IP ms-zen14.35010 > 104.16.103.112.https: Flags [P.], seq 88:127, ack 1, win 360, options [nop,nop,TS val 3955048056 ecr 339442634], length 39
+13:10:16.362360 IP 104.16.103.112.https > ms-zen14.35010: Flags [.], ack 88, win 16, options [nop,nop,TS val 339455541 ecr 3955048053], length 0
+13:10:16.365252 IP 104.16.103.112.https > ms-zen14.35010: Flags [.], ack 127, win 16, options [nop,nop,TS val 339455542 ecr 3955048056], length 0
+13:10:16.365253 IP 104.16.103.112.https > ms-zen14.35010: Flags [P.], seq 1:40, ack 127, win 16, options [nop,nop,TS val 339455542 ecr 3955048056], length 39
+13:10:16.377977 IP 104.16.103.112.https > ms-zen14.35010: Flags [P.], seq 40:329, ack 127, win 16, options [nop,nop,TS val 339455555 ecr 3955048056], length 289
+13:10:16.377978 IP 104.16.103.112.https > ms-zen14.35010: Flags [P.], seq 329:362, ack 127, win 16, options [nop,nop,TS val 339455555 ecr 3955048056], length 33
+13:10:16.377978 IP 104.16.103.112.https > ms-zen14.35010: Flags [P.], seq 362:393, ack 127, win 16, options [nop,nop,TS val 339455555 ecr 3955048056], length 31
+13:10:16.378131 IP ms-zen14.35010 > 104.16.103.112.https: Flags [.], ack 393, win 357, options [nop,nop,TS val 3955048075 ecr 339455542], length 0
+13:10:16.380409 IP ms-zen14.35010 > 104.16.103.112.https: Flags [P.], seq 127:162, ack 393, win 357, options [nop,nop,TS val 3955048077 ecr 339455542], length 35
+13:10:16.425194 IP 104.16.103.112.https > ms-zen14.35010: Flags [.], ack 162, win 16, options [nop,nop,TS val 339455605 ecr 3955048077], length 0
+13:10:16.671693 IP 10.0.96.100.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:16.876349 IP _gateway > all-systems.mcast.net: igmp query v2
+13:10:16.876349 IP 10.0.4.254.mdns > mdns.mcast.net.mdns: 0- [0q] 1/0/0 (Cache flush) PTR JessM-bM-^@M-^Ys MacBook Air._airplay._tcp.local. (66)
+13:10:16.876351 IP 10.0.4.254.mdns > mdns.mcast.net.mdns: 0- [0q] 1/0/0 (Cache flush) PTR 9C5884382ED8@JessM-bM-^@M-^Ys MacBook Air._raop._tcp.local. (76)
+13:10:16.977598 IP 10.0.64.45.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:17.084122 IP ec2-54-196-96-215.compute-1.amazonaws.com.https > ms-zen14.40772: Flags [.], ack 2097678305, win 454, options [nop,nop,TS val 2010471059 ecr 551410939], length 0
+13:10:17.084177 IP ms-zen14.40772 > ec2-54-196-96-215.compute-1.amazonaws.com.https: Flags [.], ack 1, win 482, options [nop,nop,TS val 551426313 ecr 2010455650], length 0
+13:10:17.494239 IP 10.0.96.100.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:17.800396 IP 10.0.64.45.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:17.800399 6e:47:a8:25:b9:4e (oui Unknown) > Broadcast Null Supervisory, Receiver not Ready, rcv seq 64, Flags [Poll], length 8
+13:10:17.800400 ca:1d:73:39:e9:fd (oui Unknown) > Broadcast Null Supervisory, Receiver not Ready, rcv seq 64, Flags [Poll], length 8
+13:10:18.211408 IP 10.0.96.100.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:18.406950 IP ms-zen14.57917 > 104.18.41.41.https: UDP, length 41
+13:10:18.414472 IP 104.18.41.41.https > ms-zen14.57917: UDP, length 24
+13:10:18.481490 IP 104.18.41.41.https > ms-zen14.57917: UDP, length 35
+13:10:18.484049 IP ms-zen14.57917 > 104.18.41.41.https: UDP, length 45
+13:10:18.520590 IP ms-zen14.46144 > 52.96.230.210.https: UDP, length 35
+13:10:18.521427 IP 10.0.64.45.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:18.567193 IP 52.96.230.210.https > ms-zen14.46144: UDP, length 28
+13:10:18.667238 IP lb.fra.tailscale.com.https > ms-zen14.43978: Flags [P.], seq 3928544655:3928544740, ack 3350250597, win 632, options [nop,nop,TS val 2417372447 ecr 3223230253], length 85
+13:10:18.667307 IP ms-zen14.43978 > lb.fra.tailscale.com.https: Flags [.], ack 85, win 437, options [nop,nop,TS val 3223282114 ecr 2417372447], length 0
+13:10:19.131212 IP 10.0.96.100.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:19.131212 IP 52.96.230.210.https > ms-zen14.46144: UDP, length 42
+13:10:19.133115 IP ms-zen14.46144 > 52.96.230.210.https: UDP, length 39
+13:10:19.249042 IP ms-zen14.50248 > 194.23.211.130.bc.googleusercontent.com.https: Flags [.], ack 188581382, win 496, options [nop,nop,TS val 3598995360 ecr 271494973], length 0
+13:10:19.249092 IP ms-zen14.42022 > lcyyzn-in-f94.1e100.net.https: Flags [.], ack 239110841, win 379, options [nop,nop,TS val 3399748109 ecr 234807552], length 0
+13:10:19.261221 IP lcyyzn-in-f94.1e100.net.https > ms-zen14.42022: Flags [.], ack 1, win 1042, options [nop,nop,TS val 234855599 ecr 3399700070], length 0
+13:10:19.261239 IP 194.23.211.130.bc.googleusercontent.com.https > ms-zen14.50248: Flags [.], ack 1, win 986, options [nop,nop,TS val 271540038 ecr 3598901308], length 0
+13:10:19.434915 IP 10.0.64.45.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:19.537957 IP 10.0.4.254.mdns > mdns.mcast.net.mdns: 0- [0q] 1/0/0 (Cache flush) PTR C435D9B56A29@DanielM-bM-^@M-^Ys MacBook Air._raop._tcp.local. (78)
+13:10:19.537959 IP 10.0.4.254.mdns > mdns.mcast.net.mdns: 0- [0q] 1/0/0 (Cache flush) PTR DanielM-bM-^@M-^Ys MacBook Air (3)._airplay._tcp.local. (72)
+13:10:19.760942 IP ms-zen14.53378 > 155.226.153.84.https: Flags [.], ack 53744963, win 501, options [nop,nop,TS val 1655768843 ecr 1394327162], length 0
+13:10:19.780019 IP 155.226.153.84.https > ms-zen14.53378: Flags [.], ack 1, win 462, options [nop,nop,TS val 1394372507 ecr 1655723463], length 0
+13:10:19.855615 IP 10.0.96.100.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:20.187199 IP pnyyzb-in-f105.1e100.net.https > ms-zen14.38409: UDP, length 66
+13:10:20.265121 IP 10.0.64.45.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:20.566946 IP 10.0.96.100.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:20.974934 IP 10.0.64.45.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:21.483768 IP 10.0.96.100.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:22.200481 IP 10.0.96.100.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:22.407525 IP 38.68.201.140.https > ms-zen14.43600: Flags [R.], seq 1409200872, ack 2310677880, win 0, length 0
+13:10:23.018788 IP 10.0.96.100.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:23.839113 IP 10.0.96.100.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:24.147210 IP 10.0.4.254.mdns > mdns.mcast.net.mdns: 0- [0q] 1/0/0 (Cache flush) PTR Da BEST. MacBooK Air._airplay._tcp.local. (66)
+13:10:24.147212 IP 10.0.4.254.mdns > mdns.mcast.net.mdns: 0- [0q] 1/0/0 (Cache flush) PTR 66447A8A00BE@Da BEST. MacBooK Air._raop._tcp.local. (76)
+13:10:24.610122 IP ms-zen14.34677 > lcyyzn-in-f95.1e100.net.https: UDP, length 29
+13:10:24.619112 IP 104.16.103.112.https > ms-zen14.37566: Flags [P.], seq 1211203046:1211203084, ack 1403458930, win 16, options [nop,nop,TS val 796151171 ecr 3955035123], length 38
+13:10:24.619186 IP ms-zen14.37566 > 104.16.103.112.https: Flags [.], ack 38, win 479, options [nop,nop,TS val 3955056316 ecr 796151171], length 0
+13:10:24.620284 IP ms-zen14.37566 > 104.16.103.112.https: Flags [P.], seq 1:43, ack 38, win 479, options [nop,nop,TS val 3955056317 ecr 796151171], length 42
+13:10:24.623628 IP lcyyzn-in-f95.1e100.net.https > ms-zen14.34677: UDP, length 26
+13:10:24.664514 IP 104.16.103.112.https > ms-zen14.37566: Flags [.], ack 43, win 16, options [nop,nop,TS val 796151242 ecr 3955056317], length 0
+13:10:25.356986 IP ms-zen14.53378 > 155.226.153.84.https: Flags [P.], seq 1:229, ack 1, win 501, options [nop,nop,TS val 1655774439 ecr 1394372507], length 228
+13:10:25.365967 IP ms-zen14.53378 > 155.226.153.84.https: Flags [P.], seq 229:268, ack 1, win 501, options [nop,nop,TS val 1655774448 ecr 1394372507], length 39
+13:10:25.374372 IP 155.226.153.84.https > ms-zen14.53378: Flags [.], ack 229, win 461, options [nop,nop,TS val 1394378102 ecr 1655774439], length 0
+13:10:25.374375 IP 10.0.96.100.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:10:25.375900 IP 155.226.153.84.https > ms-zen14.53378: Flags [.], ack 268, win 461, options [nop,nop,TS val 1394378103 ecr 1655774448], length 0
+13:10:25.375901 IP 155.226.153.84.https > ms-zen14.53378: Flags [P.], seq 1:40, ack 268, win 461, options [nop,nop,TS val 1394378103 ecr 1655774448], length 39
+13:10:25.375902 IP 155.226.153.84.https > ms-zen14.53378: Flags [P.], seq 40:278, ack 268, win 461, options [nop,nop,TS val 1394378103 ecr 1655774448], length 238
+13:10:25.376157 IP ms-zen14.53378 > 155.226.153.84.https: Flags [.], ack 278, win 501, options [nop,nop,TS val 1655774458 ecr 1394378103], length 0
+13:10:25.378748 IP ms-zen14.53378 > 155.226.153.84.https: Flags [P.], seq 268:303, ack 278, win 501, options [nop,nop,TS val 1655774460 ecr 1394378103], length 35
+13:10:25.430043 IP 155.226.153.84.https > ms-zen14.53378: Flags [.], ack 303, win 461, options [nop,nop,TS val 1394378158 ecr 1655774460], length 0
+13:10:26.812408 IP 10.0.4.254.mdns > mdns.mcast.net.mdns: 0- [0q] 1/0/0 (Cache flush) PTR J.Go's MacBook Air._airplay._tcp.local. (64)
+13:10:26.812410 IP 10.0.4.254.mdns > mdns.mcast.net.mdns: 0- [0q] 1/0/0 (Cache flush) PTR 02E946329C41@J.Go's MacBook Air._raop._tcp.local. (74)
+13:10:26.928948 IP ms-zen14 > mdns.mcast.net: igmp v2 report mdns.mcast.net
+13:10:27.119490 IP 104.16.103.112.https > ms-zen14.50308: Flags [P.], seq 289738024:289738062, ack 2338940879, win 16, options [nop,nop,TS val 2125929873 ecr 3955036281], length 38
+13:10:27.120980 IP ms-zen14.50308 > 104.16.103.112.https: Flags [P.], seq 1:43, ack 38, win 480, options [nop,nop,TS val 3955058818 ecr 2125929873], length 42
+13:10:27.127153 IP 104.16.103.112.https > ms-zen14.50308: Flags [.], ack 43, win 16, options [nop,nop,TS val 2125929919 ecr 3955058818], length 0
+13:10:27.324876 IP lcyyzn-in-f95.1e100.net.https > ms-zen14.34677: UDP, length 79
+13:10:27.326579 IP ms-zen14.34677 > lcyyzn-in-f95.1e100.net.https: UDP, length 33
+13:10:27.424773 IP 10.0.4.254.mdns > mdns.mcast.net.mdns: 0- [0q] 1/0/0 (Cache flush) PTR LeiM-bM-^@M-^Ys MacBook Pro._airplay._tcp.local. (65)
+13:10:27.424775 IP 10.0.4.254.mdns > mdns.mcast.net.mdns: 0- [0q] 1/0/0 (Cache flush) PTR 0E18AC867C27@LeiM-bM-^@M-^Ys MacBook Pro._raop._tcp.local. (75)
+13:10:27.440939 IP ms-zen14.33490 > 22.188.111.34.bc.googleusercontent.com.https: Flags [.], ack 2293271232, win 386, options [nop,nop,TS val 3417685803 ecr 976403195], length 0
+13:10:27.440971 IP ms-zen14.56824 > 77.235.36.34.bc.googleusercontent.com.https: Flags [.], ack 1783953923, win 492, options [nop,nop,TS val 5243791 ecr 636347570], length 0
+13:10:27.440991 IP ms-zen14.50196 > 216.19.192.6.https: Flags [.], ack 3303341652, win 468, options [nop,nop,TS val 2216039398 ecr 2740324538], length 0
+13:10:27.441008 IP ms-zen14.37642 > 172.66.171.133.https: Flags [.], ack 415235300, win 470, options [nop,nop,TS val 1016877803 ecr 3897237448], length 0
+13:10:27.441024 IP ms-zen14.52654 > 156.108.212.35.bc.googleusercontent.com.https: Flags [.], ack 3856629470, win 268, options [nop,nop,TS val 3948927442 ecr 2620670598], length 0
+13:10:27.441041 IP ms-zen14.41236 > 8.154.244.35.bc.googleusercontent.com.https: Flags [.], ack 399716079, win 481, options [nop,nop,TS val 3011931109 ecr 3386410853], length 0
+13:10:27.441062 IP ms-zen14.52908 > 207.65.37.179.https: Flags [.], ack 1183187232, win 260, options [nop,nop,TS val 3371686805 ecr 874856439], length 0
+13:10:27.441081 IP ms-zen14.35324 > lcyyzn-in-f154.1e100.net.https: Flags [.], ack 1356033433, win 450, options [nop,nop,TS val 1284696260 ecr 1889518013], length 0
+^C13:10:27.441097 IP ms-zen14.48212 > ec2-3-87-166-142.compute-1.amazonaws.com.https: Flags [.], ack 969883496, win 569, options [nop,nop,TS val 3815136813 ecr 1828699780], length 0

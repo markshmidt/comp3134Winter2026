@@ -1,0 +1,28 @@
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on wlo1, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+13:23:16.664326 IP ms-zen14.56579 > 172.64.155.209.https: UDP, length 45
+13:23:16.730652 IP ms-zen14.46916 > gbcumb01.gbc.local.domain: 448+ [1au] PTR? 209.155.64.172.in-addr.arpa. (56)
+13:23:16.736122 IP ms-zen14.45668 > gbcumb01.gbc.local.domain: 58615+ [1au] PTR? 70.97.0.10.in-addr.arpa. (52)
+13:23:16.867945 IP ms-zen14.56579 > 172.64.155.209.https: UDP, length 45
+13:23:17.182782 IP ms-zen14.56579 > 172.64.155.209.https: UDP, length 45
+13:23:17.383314 IP ms-zen14.56579 > 172.64.155.209.https: UDP, length 45
+13:23:17.488852 IP ms-zen14.57980 > pnyyzb-in-f95.1e100.net.https: Flags [.], ack 2288772521, win 401, options [nop,nop,TS val 485388599 ecr 2472890085], length 0
+13:23:17.488910 IP ms-zen14.39602 > lcyyzn-in-f113.1e100.net.https: Flags [.], ack 3773600486, win 437, options [nop,nop,TS val 2084581868 ecr 2044021948], length 0
+13:23:17.488935 IP ms-zen14.34110 > lcyyzb-in-f101.1e100.net.https: Flags [.], ack 2332144678, win 415, options [nop,nop,TS val 2002756661 ecr 1283551913], length 0
+13:23:17.488953 IP ms-zen14.33142 > pnyyzb-in-f132.1e100.net.https: Flags [.], ack 3935138957, win 406, options [nop,nop,TS val 3151429793 ecr 1296487070], length 0
+13:23:17.501955 IP ms-zen14.56579 > 172.64.155.209.https: UDP, length 45
+13:23:17.561650 IP ms-zen14.38626 > gbcumb01.gbc.local.domain: 18836+ [1au] PTR? 95.137.250.142.in-addr.arpa. (56)
+13:23:17.588389 IP ms-zen14.40375 > gbcumb01.gbc.local.domain: 8623+ [1au] PTR? 113.192.178.192.in-addr.arpa. (57)
+13:23:17.592712 IP ms-zen14.58139 > gbcumb01.gbc.local.domain: 20387+ [1au] PTR? 101.139.250.142.in-addr.arpa. (57)
+13:23:17.604774 IP ms-zen14.49907 > gbcumb01.gbc.local.domain: 30123+ [1au] PTR? 132.137.250.142.in-addr.arpa. (57)
+13:23:17.706184 IP ms-zen14.56579 > 172.64.155.209.https: UDP, length 45
+13:23:17.958280 IP ms-zen14.34677 > lcyyzn-in-f95.1e100.net.https: UDP, length 29
+13:23:17.971092 IP ms-zen14.56579 > 172.64.155.209.https: UDP, length 45
+13:23:17.978291 IP ms-zen14.52328 > gbcumb01.gbc.local.domain: 11958+ [1au] PTR? 95.192.178.192.in-addr.arpa. (56)
+13:23:18.064859 IP ms-zen14 > mdns.mcast.net: igmp v2 report mdns.mcast.net
+^C
+20 packets captured
+22 packets received by filter
+0 packets dropped by kernel
+mariia@ms-zen14:~$ 
+

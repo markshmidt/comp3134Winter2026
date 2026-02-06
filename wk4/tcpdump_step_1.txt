@@ -1,0 +1,73 @@
+mariia@ms-zen14:~$ sudo tcpdump -i wlo1
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on wlo1, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+13:03:55.943357 IP 10.0.4.254.mdns > mdns.mcast.net.mdns: 0- [0q] 1/0/0 (Cache flush) PTR Shreya._airplay._tcp.local. (52)
+13:03:55.943358 IP 10.0.4.254.mdns > mdns.mcast.net.mdns: 0- [0q] 1/0/0 (Cache flush) PTR CC08FA8454E9@Shreya._raop._tcp.local. (62)
+13:03:55.961923 IP ms-zen14.49284 > gbcumb01.gbc.local.domain: 56700+ [1au] PTR? 251.0.0.224.in-addr.arpa. (53)
+13:03:55.975707 IP gbcumb01.gbc.local.domain > ms-zen14.49284: 56700 1/0/1 PTR mdns.mcast.net. (81)
+13:03:55.976591 IP ms-zen14.46549 > gbcumb01.gbc.local.domain: 59280+ [1au] PTR? 254.4.0.10.in-addr.arpa. (52)
+13:03:55.979952 IP gbcumb01.gbc.local.domain > ms-zen14.46549: 59280 NXDomain 0/1/1 (111)
+13:03:56.065909 IP ms-zen14.53432 > gbcumb01.gbc.local.domain: 45527+ [1au] PTR? 217.80.10.10.in-addr.arpa. (54)
+13:03:56.069175 IP gbcumb01.gbc.local.domain > ms-zen14.53432: 45527 1/0/1 PTR gbcumb01.gbc.local. (86)
+13:03:56.070041 IP ms-zen14.44855 > gbcumb01.gbc.local.domain: 14986+ [1au] PTR? 70.97.0.10.in-addr.arpa. (52)
+13:03:56.075601 IP gbcumb01.gbc.local.domain > ms-zen14.44855: 14986 NXDomain 0/1/1 (111)
+13:03:56.399449 IP ms-zen14.48643 > pnyyzb-in-f94.1e100.net.https: UDP, length 106
+13:03:56.434456 IP pnyyzb-in-f94.1e100.net.https > ms-zen14.48643: UDP, length 126
+13:03:56.434458 IP pnyyzb-in-f94.1e100.net.https > ms-zen14.48643: UDP, length 22
+13:03:56.435049 IP ms-zen14.48643 > pnyyzb-in-f94.1e100.net.https: UDP, length 35
+13:03:56.463564 IP pnyyzb-in-f94.1e100.net.https > ms-zen14.48643: UDP, length 24
+13:03:56.481939 IP ms-zen14.52214 > gbcumb01.gbc.local.domain: 56375+ [1au] PTR? 94.137.250.142.in-addr.arpa. (56)
+13:03:56.486931 IP gbcumb01.gbc.local.domain > ms-zen14.52214: 56375 1/0/1 PTR pnyyzb-in-f94.1e100.net. (93)
+13:03:57.588744 IP 10.0.96.162.57621 > 10.0.127.255.57621: UDP, length 40
+13:03:57.588745 IP lcyyzn-in-f95.1e100.net.https > ms-zen14.34677: UDP, length 353
+13:03:57.589087 IP ms-zen14.34677 > lcyyzn-in-f95.1e100.net.https: UDP, length 33
+13:03:57.627143 IP ms-zen14.40361 > gbcumb01.gbc.local.domain: 14462+ [1au] PTR? 162.96.0.10.in-addr.arpa. (53)
+13:03:57.631599 IP gbcumb01.gbc.local.domain > ms-zen14.40361: 14462 NXDomain 0/1/1 (112)
+13:03:57.634290 IP ms-zen14.33499 > gbcumb01.gbc.local.domain: 48350+ [1au] PTR? 95.192.178.192.in-addr.arpa. (56)
+13:03:57.638007 IP gbcumb01.gbc.local.domain > ms-zen14.33499: 48350 1/0/1 PTR lcyyzn-in-f95.1e100.net. (93)
+13:03:57.893548 IP 10.0.4.254.mdns > mdns.mcast.net.mdns: 0- [0q] 1/0/0 (Cache flush) PTR MatthewM-bM-^@M-^Ys MacBook Air._airplay._tcp.local. (69)
+13:03:57.893550 IP 10.0.4.254.mdns > mdns.mcast.net.mdns: 0- [0q] 1/0/0 (Cache flush) PTR 264BA17E3719@MatthewM-bM-^@M-^Ys MacBook Air._raop._tcp.local. (79)
+13:03:58.301819 ae:13:70:e3:ff:aa (oui Unknown) > Broadcast Null Supervisory, Receiver not Ready, rcv seq 64, Flags [Poll], length 8
+13:03:58.609308 IP 55.94.190.35.bc.googleusercontent.com.https > ms-zen14.37636: Flags [P.], seq 3283129234:3283129605, ack 3970694826, win 1038, options [nop,nop,TS val 401027253 ecr 2806693998], length 371
+13:03:58.609308 IP 10.0.64.45.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:03:58.609392 IP ms-zen14.37636 > 55.94.190.35.bc.googleusercontent.com.https: Flags [.], ack 371, win 454, options [nop,nop,TS val 2806699172 ecr 401027253], length 0
+13:03:58.610440 IP ms-zen14.37636 > 55.94.190.35.bc.googleusercontent.com.https: Flags [P.], seq 1:40, ack 371, win 454, options [nop,nop,TS val 2806699173 ecr 401027253], length 39
+13:03:58.610850 IP ms-zen14.37636 > 55.94.190.35.bc.googleusercontent.com.https: Flags [P.], seq 40:75, ack 371, win 454, options [nop,nop,TS val 2806699174 ecr 401027253], length 35
+13:03:58.614302 IP 55.94.190.35.bc.googleusercontent.com.https > ms-zen14.37636: Flags [.], ack 75, win 1038, options [nop,nop,TS val 401027283 ecr 2806699173], length 0
+13:03:58.665975 IP ms-zen14.40537 > gbcumb01.gbc.local.domain: 58552+ [1au] PTR? 55.94.190.35.in-addr.arpa. (54)
+13:03:58.693055 IP gbcumb01.gbc.local.domain > ms-zen14.40537: 58552 1/0/1 PTR 55.94.190.35.bc.googleusercontent.com. (105)
+13:03:58.694362 IP ms-zen14.57640 > gbcumb01.gbc.local.domain: 50830+ [1au] PTR? 45.64.0.10.in-addr.arpa. (52)
+13:03:58.697371 IP gbcumb01.gbc.local.domain > ms-zen14.57640: 50830 NXDomain 0/1/1 (111)
+13:03:58.711109 IP 10.0.97.44.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:03:58.711110 IP 10.0.96.24.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:03:58.769580 IP ms-zen14.46568 > gbcumb01.gbc.local.domain: 43899+ [1au] PTR? 44.97.0.10.in-addr.arpa. (52)
+13:03:58.774227 IP gbcumb01.gbc.local.domain > ms-zen14.46568: 43899 NXDomain 0/1/1 (111)
+13:03:58.775288 IP ms-zen14.58090 > gbcumb01.gbc.local.domain: 59599+ [1au] PTR? 24.96.0.10.in-addr.arpa. (52)
+13:03:58.778265 IP gbcumb01.gbc.local.domain > ms-zen14.58090: 59599 NXDomain 0/1/1 (111)
+13:03:59.022010 IP 52.96.230.210.https > ms-zen14.46144: UDP, length 42
+13:03:59.024246 IP ms-zen14.46144 > 52.96.230.210.https: UDP, length 39
+13:03:59.083086 IP ms-zen14.33459 > gbcumb01.gbc.local.domain: 55912+ [1au] PTR? 210.230.96.52.in-addr.arpa. (55)
+13:03:59.088417 IP gbcumb01.gbc.local.domain > ms-zen14.33459: 55912 NXDomain 0/1/1 (141)
+13:03:59.345007 IP ms-zen14.58336 > lcyyzb-in-f105.1e100.net.https: UDP, length 29
+13:03:59.381957 IP lcyyzb-in-f105.1e100.net.https > ms-zen14.58336: UDP, length 26
+13:03:59.393656 IP ms-zen14.33393 > gbcumb01.gbc.local.domain: 22138+ [1au] PTR? 105.139.250.142.in-addr.arpa. (57)
+13:03:59.406823 IP gbcumb01.gbc.local.domain > ms-zen14.33393: 22138 1/0/1 PTR lcyyzb-in-f105.1e100.net. (95)
+13:03:59.429357 IP 10.0.97.43.61905 > 10.0.127.255.32414: UDP, length 21
+13:03:59.429362 IP 10.0.64.61.27036 > 10.0.127.255.27036: UDP, length 174
+13:03:59.429367 IP 10.0.97.43.61904 > 10.0.127.255.32412: UDP, length 21
+13:03:59.429371 IP 10.0.97.44.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:03:59.429372 IP 10.0.96.24.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:03:59.429375 IP 10.0.64.45.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:03:59.497500 IP ms-zen14.59205 > gbcumb01.gbc.local.domain: 433+ [1au] PTR? 43.97.0.10.in-addr.arpa. (52)
+13:03:59.502120 IP gbcumb01.gbc.local.domain > ms-zen14.59205: 433 NXDomain 0/1/1 (111)
+13:03:59.503696 IP ms-zen14.37174 > gbcumb01.gbc.local.domain: 14585+ [1au] PTR? 61.64.0.10.in-addr.arpa. (52)
+13:03:59.509843 IP gbcumb01.gbc.local.domain > ms-zen14.37174: 14585 NXDomain 0/1/1 (111)
+13:03:59.841797 IP lcyyzn-in-f95.1e100.net.https > ms-zen14.34677: UDP, length 78
+13:03:59.842173 IP ms-zen14.34677 > lcyyzn-in-f95.1e100.net.https: UDP, length 33
+13:04:00.147030 IP 10.0.96.24.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+13:04:00.147030 IP 10.0.64.45.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 50
+^C
+65 packets captured
+65 packets received by filter
+0 packets dropped by kernel
+

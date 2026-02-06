@@ -1,0 +1,6 @@
+mariia@ms-zen14:~$ sudo tcpdump -w 0001.pcap -i wlo1
+tcpdump: listening on wlo1, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+^C517 packets captured
+578 packets received by filter
+0 packets dropped by kernel
+

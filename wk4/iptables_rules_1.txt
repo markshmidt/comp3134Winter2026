@@ -1,0 +1,102 @@
+Chain INPUT (policy ACCEPT 2680K packets, 12G bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+2684K   12G ts-input   all  --  any    any     anywhere             anywhere            
+2680K   12G LIBVIRT_INP  all  --  any    any     anywhere             anywhere            
+
+Chain FORWARD (policy ACCEPT 4 packets, 160 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    4   160 ts-forward  all  --  any    any     anywhere             anywhere            
+    4   160 DOCKER-USER  all  --  any    any     anywhere             anywhere            
+    4   160 DOCKER-FORWARD  all  --  any    any     anywhere             anywhere            
+    4   160 LIBVIRT_FWX  all  --  any    any     anywhere             anywhere            
+    4   160 LIBVIRT_FWI  all  --  any    any     anywhere             anywhere            
+    4   160 LIBVIRT_FWO  all  --  any    any     anywhere             anywhere            
+
+Chain OUTPUT (policy ACCEPT 2032K packets, 11G bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+2032K   11G LIBVIRT_OUT  all  --  any    any     anywhere             anywhere            
+
+Chain DOCKER (4 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     tcp  --  !docker0 docker0  anywhere             172.17.0.2           tcp dpt:9443
+    0     0 ACCEPT     tcp  --  !docker0 docker0  anywhere             172.17.0.2           tcp dpt:9000
+    0     0 DROP       all  --  !br-3558718801ea br-3558718801ea  anywhere             anywhere            
+    0     0 DROP       all  --  !br-8934619c2a6f br-8934619c2a6f  anywhere             anywhere            
+    0     0 DROP       all  --  !br-9b04e0a2ed6e br-9b04e0a2ed6e  anywhere             anywhere            
+    0     0 DROP       all  --  !docker0 docker0  anywhere             anywhere            
+
+Chain DOCKER-BRIDGE (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 DOCKER     all  --  any    br-3558718801ea  anywhere             anywhere            
+    0     0 DOCKER     all  --  any    br-8934619c2a6f  anywhere             anywhere            
+    0     0 DOCKER     all  --  any    br-9b04e0a2ed6e  anywhere             anywhere            
+    0     0 DOCKER     all  --  any    docker0  anywhere             anywhere            
+
+Chain DOCKER-CT (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     all  --  any    br-3558718801ea  anywhere             anywhere             ctstate RELATED,ESTABLISHED
+    0     0 ACCEPT     all  --  any    br-8934619c2a6f  anywhere             anywhere             ctstate RELATED,ESTABLISHED
+    0     0 ACCEPT     all  --  any    br-9b04e0a2ed6e  anywhere             anywhere             ctstate RELATED,ESTABLISHED
+    0     0 ACCEPT     all  --  any    docker0  anywhere             anywhere             ctstate RELATED,ESTABLISHED
+
+Chain DOCKER-FORWARD (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    4   160 DOCKER-CT  all  --  any    any     anywhere             anywhere            
+    4   160 DOCKER-INTERNAL  all  --  any    any     anywhere             anywhere            
+    4   160 DOCKER-BRIDGE  all  --  any    any     anywhere             anywhere            
+    0     0 ACCEPT     all  --  br-3558718801ea any     anywhere             anywhere            
+    0     0 ACCEPT     all  --  br-8934619c2a6f any     anywhere             anywhere            
+    0     0 ACCEPT     all  --  br-9b04e0a2ed6e any     anywhere             anywhere            
+    0     0 ACCEPT     all  --  docker0 any     anywhere             anywhere            
+
+Chain DOCKER-INTERNAL (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain DOCKER-USER (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain LIBVIRT_FWI (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     all  --  any    virbr0  anywhere             192.168.122.0/24     ctstate RELATED,ESTABLISHED
+    0     0 REJECT     all  --  any    virbr0  anywhere             anywhere             reject-with icmp-port-unreachable
+
+Chain LIBVIRT_FWO (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     all  --  virbr0 any     192.168.122.0/24     anywhere            
+    0     0 REJECT     all  --  virbr0 any     anywhere             anywhere             reject-with icmp-port-unreachable
+
+Chain LIBVIRT_FWX (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     all  --  virbr0 virbr0  anywhere             anywhere            
+
+Chain LIBVIRT_INP (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     udp  --  virbr0 any     anywhere             anywhere             udp dpt:domain
+    0     0 ACCEPT     tcp  --  virbr0 any     anywhere             anywhere             tcp dpt:domain
+    0     0 ACCEPT     udp  --  virbr0 any     anywhere             anywhere             udp dpt:bootps
+    0     0 ACCEPT     tcp  --  virbr0 any     anywhere             anywhere             tcp dpt:67
+
+Chain LIBVIRT_OUT (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     udp  --  any    virbr0  anywhere             anywhere             udp dpt:domain
+    0     0 ACCEPT     tcp  --  any    virbr0  anywhere             anywhere             tcp dpt:domain
+    0     0 ACCEPT     udp  --  any    virbr0  anywhere             anywhere             udp dpt:bootpc
+    0     0 ACCEPT     tcp  --  any    virbr0  anywhere             anywhere             tcp dpt:68
+
+Chain ts-forward (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 MARK       all  --  tailscale0 any     anywhere             anywhere             MARK xset 0x40000/0xff0000
+    0     0 ACCEPT     all  --  any    any     anywhere             anywhere             mark match 0x40000/0xff0000
+    0     0 DROP       all  --  any    tailscale0  100.64.0.0/10        anywhere            
+    0     0 ACCEPT     all  --  any    tailscale0  anywhere             anywhere            
+
+Chain ts-input (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     all  --  lo     any     ms-zen14.taile4f5e8.ts.net  anywhere            
+    0     0 RETURN     all  --  !tailscale0 any     100.115.92.0/23      anywhere            
+  126 25074 DROP       all  --  !tailscale0 any     100.64.0.0/10        anywhere            
+ 1773  682K ACCEPT     all  --  tailscale0 any     anywhere             anywhere            
+ 3229  874K ACCEPT     udp  --  any    any     anywhere             anywhere             udp dpt:41641
+mariia@ms-zen14:~$ 
+
+

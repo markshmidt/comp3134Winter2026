@@ -1,0 +1,12 @@
+mariia@ms-zen14:~$ sudo tcpdump -c 5 -i wlo1
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on wlo1, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+13:05:50.432878 IP 10.0.97.39.netbios-ns > 10.0.127.255.netbios-ns: UDP, length 68
+13:05:50.492574 IP ms-zen14.56388 > gbcumb01.gbc.local.domain: 30368+ [1au] PTR? 39.97.0.10.in-addr.arpa. (52)
+13:05:50.524298 IP gbcumb01.gbc.local.domain > ms-zen14.56388: 30368 NXDomain 0/1/1 (111)
+13:05:50.595449 IP ms-zen14.46298 > gbcumb01.gbc.local.domain: 10311+ [1au] PTR? 70.97.0.10.in-addr.arpa. (52)
+13:05:50.619682 IP gbcumb01.gbc.local.domain > ms-zen14.46298: 10311 NXDomain 0/1/1 (111)
+5 packets captured
+5 packets received by filter
+0 packets dropped by kernel
+
