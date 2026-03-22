@@ -1,0 +1,6 @@
+I will mitigate the first problem by using basename() so the user cannot traverse outside the intended directory path with values such as ../ or encoded equivalents.
+
+I will mitigate the second problem by checking file_exists() and is_dir() before calling scandir(), so the script does not attempt to scan paths that do not exist.
+
+Bonus mitigation:
+I will reject inputs containing a dot so users cannot try to pass filenames instead of folder names.

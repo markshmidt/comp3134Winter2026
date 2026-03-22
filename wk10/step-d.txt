@@ -1,0 +1,7 @@
+When I open the page with q=hello, the browser shows a PHP warning/error because the folder does not exist and the script still tries to scan it.
+
+Issue:
+The page does not validate user input before using it in scandir().
+
+Sensitive information exposed:
+The page can reveal server-side error details, filesystem behavior, and hints about directory structure. Error messages may help an attacker understand how the application handles paths.

@@ -1,0 +1,3 @@
+I will mitigate the problem by removing sensitive HTML comments from the client-side source code. HTML comments are visible in the browser when users inspect the page source.
+
+Instead of HTML comments, I will use PHP comments on the server side. PHP comments are processed on the server and are not sent to the browser, so users cannot see them in page source.

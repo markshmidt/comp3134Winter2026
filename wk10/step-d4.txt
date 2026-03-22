@@ -1,0 +1,7 @@
+When I open the page with q=../../, the browser displays files and folders from directories above the intended web folder.
+
+Issue:
+This is a directory traversal vulnerability. The application accepts user-controlled paths without validation, so an attacker can move upward in the filesystem.
+
+Sensitive information exposed:
+The page can reveal folder names, system structure, application directories, configuration locations, and other server-side files that should not be visible to users.

@@ -1,0 +1,7 @@
+When I open the page with q=%2e%2e%2f, the browser again shows files and folders from a parent directory. The encoded path works the same as ../.
+
+Issue:
+This is still directory traversal. URL encoding does not prevent the attack if the application does not validate and sanitize the input.
+
+Sensitive information exposed:
+The page may expose directory names, server structure, and potentially sensitive locations outside the intended web directory.
